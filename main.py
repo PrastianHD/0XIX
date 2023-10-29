@@ -7,7 +7,7 @@ URL = "https://www.oxix.network/signup?refid=d65d77a101" #Ganti Link Google Form
 chrome_driver_path = r"C:\Script Bot/chromedriver.exe" #Ganti folder ChromeDriver Berada
 
 def fill_form():
-    data = pd.read_csv('C:\Script Bot\Bahasa Python\Form Otomatis\data2.csv', skipinitialspace=True) #Ganti file data.csv Berada
+    data = pd.read_csv('data.csv', skipinitialspace=True) #Ganti file data.csv Berada
     recycle = data.shape[0]
     for i in range(recycle):
         driver = webdriver.Chrome(service=Service(executable_path=chrome_driver_path))
